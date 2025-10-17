@@ -3,7 +3,7 @@ package entities;
 import abilities.Ability;
 
 public class BasicAttack extends Ability {
-    public BasicAttack(){
+    public BasicAttack() {
         super("Обычная атака");
     }
 

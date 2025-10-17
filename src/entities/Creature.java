@@ -41,21 +41,21 @@ public class Creature {
         return abilities;
     }
 
-     public void addRune(Rune rune) {
+    public void addRune(Rune rune) {
         if (runes.size() < 6) {
             runes.add(rune);
         } else {
             System.out.println(name + " не может носить более 6 рун!");
         }
-     }
+    }
 
-     public List<Rune> getRunes() {
+    public List<Rune> getRunes() {
         return runes;
-     }
+    }
 
-     public double getHp() {
+    public double getHp() {
         return baseHp * (1 + getRuneBonus(Rune.Type.HP));
-     }
+    }
 
     public double getAttack() {
         return baseAttack * (1 + getRuneBonus(Rune.Type.ATTACK));
