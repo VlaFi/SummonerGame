@@ -1,13 +1,17 @@
-package entities;
+package abilities;
+
+import entities.Creature;
 
 public abstract class Ability {
     private final String name;
 
     public Ability(String name) {
+
         this.name = name;
     }
 
     public String getName() {
+
         return name;
     }
 
